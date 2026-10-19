@@ -1,0 +1,142 @@
+[
+  {
+    "id": "asset_c1eba0ad6a",
+    "filename": "gemini_generated_image_fqm6xafqm6xafqm6_asset_.webp",
+    "original_filename": "Gemini_Generated_Image_fqm6xafqm6xafqm6.jpeg",
+    "url": "/assets/1901ed90-e166-4df7-a4cd-b46692d1f348/gemini_generated_image_fqm6xafqm6xafqm6_asset_.webp",
+    "mime_type": "image/webp",
+    "format": "webp",
+    "size_bytes": 67090,
+    "original_size_bytes": 1908711,
+    "savings_pct": 96.5,
+    "width": 1440,
+    "height": 804,
+    "semantic_use": "container",
+    "alt_text": "Gemini Generated Image fqm6xafqm6xafqm6",
+    "title": "Gemini Generated Image fqm6xafqm6xafqm6",
+    "keywords": "",
+    "tags": [
+      "container"
+    ],
+    "created_at": "2026-10-18T21:16:33.234426+00:00",
+    "optimized": true
+  },
+  {
+    "id": "asset_d0d1554dc0",
+    "filename": "gemini_generated_image_fqm6xafqm6xafqm6_asset_.webp",
+    "original_filename": "Gemini_Generated_Image_fqm6xafqm6xafqm6.jpg",
+    "url": "/assets/1901ed90-e166-4df7-a4cd-b46692d1f348/gemini_generated_image_fqm6xafqm6xafqm6_asset_.webp",
+    "mime_type": "image/webp",
+    "format": "webp",
+    "size_bytes": 67090,
+    "original_size_bytes": 1908711,
+    "savings_pct": 96.5,
+    "width": 1440,
+    "height": 804,
+    "semantic_use": "container",
+    "alt_text": "integraciones a la medida",
+    "title": "desarrollo modular",
+    "keywords": "",
+    "tags": [
+      "container"
+    ],
+    "created_at": "2026-10-18T13:42:49.448947+00:00",
+    "optimized": true
+  },
+  {
+    "id": "asset_44ccd3858d",
+    "filename": "cliente_reservastodo_asset_.webp",
+    "original_filename": "cliente_reservastodo.png",
+    "url": "/assets/1901ed90-e166-4df7-a4cd-b46692d1f348/cliente_reservastodo_asset_.webp",
+    "mime_type": "image/webp",
+    "format": "webp",
+    "size_bytes": 30054,
+    "original_size_bytes": 44348,
+    "savings_pct": 32.2,
+    "width": 1080,
+    "height": 1080,
+    "semantic_use": "container",
+    "alt_text": "Cliente reservastodo",
+    "title": "Cliente reservastodo",
+    "keywords": "",
+    "tags": [
+      "container"
+    ],
+    "created_at": "2026-10-18T10:33:18.974666+00:00",
+    "optimized": true
+  },
+  {
+    "id": "asset_412151571d",
+    "filename": "isotipo_synor_logo_asset_.png",
+    "original_filename": "isotipo_synor.jpeg",
+    "url": "/assets/1901ed90-e166-4df7-a4cd-b46692d1f348/isotipo_synor_logo_asset_.png",
+    "mime_type": "image/png",
+    "format": "png",
+    "size_bytes": 108365,
+    "original_size_bytes": 18205,
+    "savings_pct": 0,
+    "width": 602,
+    "height": 602,
+    "semantic_use": "logo",
+    "alt_text": "Isotipo synor",
+    "title": "Isotipo synor",
+    "keywords": "",
+    "tags": [
+      "marca",
+      "logo",
+      "footer",
+      "navbar",
+      "favicon-compatible"
+    ],
+    "created_at": "2026-10-18T04:35:16.424357+00:00",
+    "optimized": true
+  },
+  {
+    "id": "asset_1b5a930c72",
+    "filename": "reservatodocom_paleta-de-colores_finales_2_asset_.webp",
+    "original_filename": "Reservatodocom_paleta de colores_finales_2.png",
+    "url": "/assets/1901ed90-e166-4df7-a4cd-b46692d1f348/reservatodocom_paleta-de-colores_finales_2_asset_.webp",
+    "mime_type": "image/webp",
+    "format": "webp",
+    "size_bytes": 104398,
+    "original_size_bytes": 438153,
+    "savings_pct": 76.2,
+    "width": 1440,
+    "height": 960,
+    "semantic_use": "container",
+    "alt_text": "Reservatodocom paleta de colores finales 2",
+    "title": "Reservatodocom paleta de colores finales 2",
+    "keywords": "",
+    "tags": [
+      "container"
+    ],
+    "created_at": "2026-10-17T18:51:11.958984+00:00",
+    "optimized": true
+  },
+  {
+    "id": "asset_a013987ce2",
+    "filename": "logo_synor_logo_asset_.png",
+    "original_filename": "logo_synor.png",
+    "url": "/assets/1901ed90-e166-4df7-a4cd-b46692d1f348/logo_synor_logo_asset_.png",
+    "mime_type": "image/png",
+    "format": "png",
+    "size_bytes": 183557,
+    "original_size_bytes": 215167,
+    "savings_pct": 14.7,
+    "width": 3000,
+    "height": 2000,
+    "semantic_use": "logo",
+    "alt_text": "Logo synor",
+    "title": "Logo synor",
+    "keywords": "",
+    "tags": [
+      "navbar",
+      "marca",
+      "footer",
+      "logo",
+      "favicon-compatible"
+    ],
+    "created_at": "2026-10-17T12:57:20.876790+00:00",
+    "optimized": true
+  }
+]

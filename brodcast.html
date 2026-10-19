@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es" class="dark" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brodcast - Synor Cloud Gamma</title>
+    <meta name="description" content="Synor Cloud Gamma">
+    
+    <link rel="icon" href="assets/isotipo_synor_logo_asset_.png">
+    <link rel="shortcut icon" href="assets/isotipo_synor_logo_asset_.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+              heading: ['var(--font-heading)', 'Outfit', 'Inter', 'sans-serif'],
+              body: ['var(--font-body)', 'Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#eff6ff',
+                100: '#dbeafe',
+                500: '#3b82f6',
+                600: '#2563eb',
+                700: '#1d4ed8',
+                900: '#1e3a8a',
+              },
+              primary: 'var(--color-primary)',
+              secondary: 'var(--color-secondary)',
+              canvas: 'var(--color-canvas)',
+              surface: 'var(--color-surface)',
+              border: 'var(--color-border)',
+              body: 'var(--color-text)',
+            },
+            borderRadius: {
+              token: 'var(--radius-base)',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <style id="omniflow-responsive-overrides">
+      @media (max-width: 767px) {
+        *, ::before, ::after {
+          box-sizing: border-box !important;
+        }
+        html, body {
+          overflow-x: hidden !important;
+          max-width: 100vw !important;
+          width: 100% !important;
+        }
+        .grid, .grid-cols-1, [class*="grid-cols-"], [class*="md:grid-cols-"], [class*="lg:grid-cols-"], [style*="grid-template-columns"] {
+          display: grid !important;
+          grid-template-columns: minmax(0, 1fr) !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .grid > *, [class*="grid-cols-"] > *, [class*="md:grid-cols-"] > *, [class*="lg:grid-cols-"] > *,
+        omniflow-container, omniflow-slider, omniflow-marquee, omniflow-card, omniflow-hero-banner, omniflow-datagrid,
+        section, article {
+          grid-column: 1 / -1 !important;
+          min-width: 0 !important;
+          max-width: 100% !important;
+          width: 100% !important;
+          box-sizing: border-box !important;
+        }
+        .slider-track {
+          max-width: 100% !important;
+          min-width: 0 !important;
+          width: 100% !important;
+          overflow-x: auto !important;
+        }
+        .slider-track > * {
+          min-width: 0 !important;
+        }
+        h1, h2, h3, h4, p, span, a {
+          overflow-wrap: break-word !important;
+          word-break: break-word !important;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .md\:grid-cols-2, .md\:grid-cols-3, [class*="lg:grid-cols-3"] {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+        .md\:grid-cols-3 > *, [class*="lg:grid-cols-3"] > * {
+          max-width: 100% !important;
+          min-width: 0 !important;
+        }
+      }
+    </style>
+    
+    <style id="omniflow-theme-tokens">
+/* ==========================================================================
+   OmniFlow Design System — Dynamic Design Tokens
+   Generado automáticamente por el Theme Manager de OmniFlow
+   ========================================================================== */
+
+:root {
+  /* Colores Semánticos (Modo Claro por Defecto) */
+  --color-primary: #3b82f6;
+  --color-secondary: #64748b;
+  --color-bg: #ffffff;
+  --color-text: #0f172a;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+
+  /* Tipografía Centralizada */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-base-size: 16px;
+
+  /* Geometría y Radio de Bordes */
+  --radius-base: 0.75rem;
+  --radius-token: 0.75rem;
+}
+
+.dark, [data-theme="dark"] {
+  /* Colores Semánticos Alternos (Modo Oscuro) */
+  --color-bg: #030712;
+  --color-text: #f8fafc;
+  --color-surface: #0d1527;
+  --color-border: #1e293b;
+}
+
+/* Clases Utilitarias Semánticas de OmniFlow (Consumen CSS Variables dinámicas) */
+.bg-primary { background-color: var(--color-primary) !important; }
+.text-primary { color: var(--color-primary) !important; }
+.border-primary { border-color: var(--color-primary) !important; }
+
+.bg-secondary { background-color: var(--color-secondary) !important; }
+.text-secondary { color: var(--color-secondary) !important; }
+.border-secondary { border-color: var(--color-secondary) !important; }
+
+.bg-canvas { background-color: var(--color-bg) !important; }
+.bg-surface { background-color: var(--color-surface) !important; }
+.text-body { color: var(--color-text) !important; }
+.border-border { border-color: var(--color-border) !important; }
+
+.omniflow-glassmorphism, .bg-glassmorphism {
+  background-color: rgba(15, 23, 42, 0.72) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.omniflow-glassmorphism-light {
+  background-color: rgba(255, 255, 255, 0.78) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+@supports (background-color: color-mix(in srgb, red 50%, blue)) {
+  .omniflow-glassmorphism, .bg-glassmorphism {
+    background-color: color-mix(in srgb, var(--color-surface, #0f172a) 70%, transparent) !important;
+  }
+  .omniflow-glassmorphism-light {
+    background-color: color-mix(in srgb, var(--color-surface, #ffffff) 78%, transparent) !important;
+  }
+}
+
+.font-heading { font-family: var(--font-heading) !important; }
+.font-body { font-family: var(--font-body) !important; }
+
+.rounded-token { border-radius: var(--radius-base) !important; }
+.rounded-base { border-radius: var(--radius-base) !important; }
+
+    </style>
+    
+    
+    <!-- Componentes Web Modulares OmniFlow (W3C Custom Elements) -->
+    
+    <script src="components/footer.js" defer></script>
+    
+    <script src="components/header.js" defer></script>
+    
+    
+</head>
+<body class="bg-canvas text-body font-body flex flex-col min-h-screen">
+    <omniflow-header id="site-header"></omniflow-header>
+
+    <header id="comp-node" class="sticky top-0 z-50 omniflow-glassmorphism text-white border-b border-border shadow-lg transition ">
+    <div class="max-w-7xl mx-auto px-6 py-3.5 flex items-center justify-center gap-4">
+        <div class="flex items-center gap-6">
+            <a href="inicio.html" class="flex items-center gap-2.5 group cursor-pointer hover:opacity-90 transition">
+                <span class="w-7 h-7 rounded-lg bg-blue-600 inline-flex items-center justify-center font-bold text-xs text-white shadow-md shadow-blue-500/25">Ω</span>
+                <span class="font-bold text-sm tracking-tight text-body group-hover:text-blue-400 transition-colors">Synor Cloud</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="inicio.html" class="text-xs font-medium text-slate-300 hover:text-white transition flex items-center gap-1.5"><span>Inicio</span></a>
+<a href="soluciones.html" class="text-xs font-medium text-slate-300 hover:text-white transition flex items-center gap-1.5"><span>Soluciones</span></a>
+<a href="contacto.html" class="text-xs font-medium text-slate-300 hover:text-white transition flex items-center gap-1.5"><span>Contacto</span><span class="text-[9px] px-1.5 py-0.2 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30 font-semibold">CTA</span></a>
+<a href="login.html" class="text-xs font-medium text-slate-300 hover:text-white transition flex items-center gap-1.5"><span>Login</span><span class="text-[9px] px-1.5 py-0.2 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30 font-semibold">Acceso</span></a>
+
+            </nav>
+        </div>
+        <div class="flex items-center gap-3">
+            
+            <button onclick="document.getElementById('mobileNav_comp-node').classList.toggle('hidden')" class="md:hidden p-1 rounded bg-slate-800 text-slate-300 hover:text-white transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            
+    <div class="relative group" id="userMenu_comp-node">
+    <button type="button" class="flex items-center gap-2 p-1 rounded-lg hover:bg-slate-800/60 transition cursor-pointer text-left focus:outline-none" title="Menú de usuario">
+        <div class="w-7 h-7 rounded-full bg-slate-700 border border-slate-600 flex items-center justify-center text-xs font-semibold text-slate-200 shadow-sm">OP</div>
+        
+        <svg class="w-3 h-3 text-slate-400 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </button>
+    
+    </div>
+    
+        </div>
+    </div>
+    </header>
+    <div id="mobileNav_comp-node" class="hidden md:hidden p-4 bg-slate-950 border-b border-slate-800 flex flex-col gap-2">
+    <a href="inicio.html" class="flex items-center justify-between text-xs py-1.5 text-slate-200 hover:text-white border-b border-slate-900"><div class="flex items-center gap-2"><span>Inicio</span></div></a>
+<a href="soluciones.html" class="flex items-center justify-between text-xs py-1.5 text-slate-200 hover:text-white border-b border-slate-900"><div class="flex items-center gap-2"><span>Soluciones</span></div></a>
+<a href="contacto.html" class="flex items-center justify-between text-xs py-1.5 text-slate-200 hover:text-white border-b border-slate-900"><div class="flex items-center gap-2"><span>Contacto</span></div><span class="text-[9px] px-1.5 py-0.2 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30 font-semibold">CTA</span></a>
+<a href="login.html" class="flex items-center justify-between text-xs py-1.5 text-slate-200 hover:text-white border-b border-slate-900"><div class="flex items-center gap-2"><span>Login</span></div><span class="text-[9px] px-1.5 py-0.2 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30 font-semibold">Acceso</span></a>
+
+    </div>
+    
+    
+
+    <main class="w-full flex-1 flex flex-col justify-start items-center p-0 overflow-y-auto">
+    
+    </main>
+    
+<footer id="comp-node" class="w-full mt-auto transition-colors border-t border-border bg-surface border-border text-body py-8 px-6" style=" ">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex flex-col items-start text-left flex-1 w-full md:w-auto">
+<div class="flex items-center inline-block" style="margin-bottom: 0px;"><img src="assets/logo_synor_logo_asset_.png" alt="Logo synor" class="object-contain transition-transform hover:opacity-95" style="width: 110px; height: 80px;" /></div>
+<p class="leading-relaxed text-[11px] text-secondary text-slate-400 font-normal" style=" margin-bottom: 2px;">© 2026 OmniFlow Technologies Inc. Todos los derechos reservados.</p>
+</div>
+        <div class="flex flex-col items-center text-center flex-1 w-full md:w-auto">
+<a href="/inicio" target="_self" class="inline-block transition-colors hover:text-white hover:underline text-[11px] text-secondary text-slate-400 font-normal" style=" margin-left: 8px; margin-right: 8px; margin-bottom: 4px;">Inicio</a>
+<a href="/soluciones" target="_self" class="inline-block transition-colors hover:text-white hover:underline text-[11px] text-secondary text-slate-400 font-normal" style=" margin-left: 8px; margin-right: 8px; margin-bottom: 4px;">Soluciones</a>
+<a href="/contacto" target="_self" class="inline-block transition-colors hover:text-white hover:underline text-[11px] text-secondary text-slate-400 font-normal" style=" margin-left: 8px; margin-right: 8px; margin-bottom: 4px;">Contacto</a>
+</div>
+        <div class="flex flex-col items-end text-right flex-1 w-full md:w-auto">
+<div class="inline-flex items-center justify-center shrink-0 text-primary text-blue-400" style="width: 18px; height: 18px;  margin-left: 4px; margin-right: 4px; margin-bottom: 4px;"><svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+<p class="leading-relaxed text-[11px] text-secondary text-slate-400 font-bold" style=" margin-bottom: 4px;">Synor Broadcast v3.0 — Verificado</p>
+</div>
+    </div>
+</footer>
+<omniflow-footer id="site-footer"></omniflow-footer>
+
+    <!-- Initial Page State for Reactive OmniFlow Store -->
+    <script id="omniflow-initial-state" type="application/json">{"input_busqueda": "", "datos_usuario": [], "__theme_mode": "dark"}</script>
+    
+    <script src="js/runtime.js"></script>
+</body>
+</html>
